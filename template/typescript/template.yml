@@ -1,4 +1,4 @@
-language: node18
+language: nestjs
 fprocess: bash ./start.sh
 welcome_message: |
   You have created a new function which uses Node.js 18 and the OpenFaaS
