@@ -1,5 +1,5 @@
 if [ "$DEBUG" = "true" ]; then
-    nodemon index.ts
+    cd function && npm run start
 else
     node .
 fi

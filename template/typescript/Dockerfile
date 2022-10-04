@@ -63,7 +63,7 @@ ENV read_timeout="15s"
 
 ENV prefix_logs="false"
 
-RUN npm run start
+RUN ./build.sh
 
 RUN chown -R app:app /home/app
 USER app
