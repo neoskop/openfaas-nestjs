@@ -1,0 +1,23 @@
+{
+  "name": "openfaas-function",
+  "version": "1.0.0",
+  "description": "OpenFaaS Function",
+  "exports": "./handler.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "OpenFaaS Ltd",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "4.8.2"
+  },
+  "dependencies": {
+    "@types/node": "16.11.56"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}
