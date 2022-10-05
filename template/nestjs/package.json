@@ -2,11 +2,11 @@
   "name": "openfaas-nestjs",
   "version": "1.0.0",
   "description": "",
-  "exports": "./index.js",
+  "exports": "./function/src/main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no tests specified\" && exit 0",
-    "start": "nest start",
+    "start": "cd fucntion && nest start",
     "build": "./build.sh"
   },
   "keywords": [],
