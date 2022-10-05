@@ -28,7 +28,6 @@ COPY package.json ./
 RUN npm i
 
 # Copy outer function handler
-COPY index.ts ./
 COPY *.sh ./
 COPY tsconfig.json ./
 COPY nodemon.json ./
