@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no tests specified\" && exit 0",
-    "start": "./start.sh",
+    "start": "nest start",
     "build": "./build.sh"
   },
   "keywords": [],
