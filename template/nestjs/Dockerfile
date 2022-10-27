@@ -44,7 +44,7 @@ RUN npm i
 COPY function/ ./
 
 # Run any tests that may be available
-RUN apt-get update && apt-get install jq -y
+RUN apt-get update && apt-get install jq ghostscript graphicsmagick -y
 RUN 
 RUN test "$(jq '.scripts | has("test")' package.json)" = "false" || npm test
 
