@@ -1,6 +1,7 @@
+cd function
+
 if [ "$DEBUG" = "true" ]; then
-    cd function && npm run start
+  npm run start
 else
-    cd function && npm run start
-    
+  npm run start:prod
 fi
