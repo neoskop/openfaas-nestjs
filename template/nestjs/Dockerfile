@@ -45,6 +45,7 @@ COPY function/ ./
 
 # Run any tests that may be available
 RUN apt-get update && apt-get install jq ghostscript graphicsmagick -y
+RUN sed -i '/disable ghostscript format types/,+6d' /etc/ImageMagick-6/policy.xml
 RUN test "$(jq '.scripts | has("test")' package.json)" = "false" || npm test
 
 # Set correct permissions to use non root user
